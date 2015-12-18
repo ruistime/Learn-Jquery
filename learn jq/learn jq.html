@@ -3,7 +3,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>File upload</title>
     <style>
-			*{padding: 0;margin: 0}
+			*{ padding: 0;margin: 0;
+			   font-family: Arial, 宋体, simsun;
+               font-size: 16px
+			}
+			ul,li{list-style: none;}
+			a{text-decoration: none;}
 			/* /单击list菜单
 				ul,li{list-style: none;}
 				a{text-decoration: none;}
@@ -11,6 +16,28 @@
 				.level1{
 					background-color:gray;width:300px;
 					transition:all 0.3s; 
+			}*/
+		  	
+			/*精简全部菜单 
+			
+			.SubCategoryBox ul{
+				width:100%;
+				overflow: hidden;
+				border: 1px red solid
+				
+			}
+			.SubCategoryBox li{
+				float: left;
+			}
+			.showMore{
+				text-align: center;
+			} 
+			.showMore a{
+				display: inline-block;
+				border: 1px solid gray;
+			}
+			.Highlight{
+				color:red;
 			}*/
 		
     </style>
@@ -55,7 +82,9 @@
    		<label for="readed">我已经阅读了上面制度</label>
    		<input type="submit" id="InneedCheck" > 
    	</div> -->
-   	<form id='formTest' action="#">
+   <!--    表单选择器	
+
+   <form id='formTest' action="#">
    		可用元素：<input name="add" id="test"  value='可用文本框'>
    		不可用元素：<input name="email" id="test"  value='不可用文本框' disabled="disabled">
    		可用元素:<input name="che" id="test"  value='可用文本框'>
@@ -90,9 +119,60 @@
 			<option >湖南</option>
    		</select>
    		<span style="display:inline;vertical-align:top"  >inline元素上下对其探索！！</span>
-   	</div>
+   	</div> -->
+	<!-- <form id="form2" action="#"> 
+		<input type="button"   value="Button" />
+		<input type="checkbox" name="c" />1
+		<input type="checkbox" name="c" />2
+		<input type="checkbox" name="c" />3</br>
+		<input type="file" /> <br/>
+		<input type="hidden" name="c" /><div style="display:none">test</div></br>
+		<input type="img" />
+		<input type="password" />
+		<input type="radio" name="ac" />1
+		<input type="radio" name="ac" />2</br>
+		<input type="reset" name="c" />
+		<input type="submit" value="submit" />
+		<input type="text"></br>
+			<input type="text">	<input type="text">
+		<select><option>Option</option></select><br/>
+		<textarea></textarea><br/>
+		<button>  Button</button><br/>
+	</form> -->
+		<!--   id含特殊
+		<div id="id#b">特殊id选择器</div>
+		<div id="id[1]">特殊id选择器</div>  -->
 
-<script src="C:\Users\xurui\Desktop\index.js"></script>
+		<!-- 有无空格的地方 
+		<div class="test">
+			<div style="display:none">aa</div>
+			<div style="display:none">aa</div>
+		</div>
+		<div class="test" style="display:none">aa</div> -->
+		<!--  精简全部菜单 
+		<div class="SubCategoryBox">
+			<ul>
+				<li><a href="#">佳能1</a><i>(123123)</i></li>
+				<li><a href="#">佳能2</a><i>(123123)</i></li>
+				<li><a href="#">佳能3</a><i>(123123)</i></li>
+				<li><a href="#">佳能4</a><i>(123123)</i></li>
+				<li><a href="#">佳能5</a><i>(123123)</i></li>
+				<li><a href="#">佳能6</a><i>(123123)</i></li>
+				<li><a href="#">佳能7</a><i>(123123)</i></li>
+				<li><a href="#">佳能8</a><i>(123123)</i></li>
+				<li><a href="#">佳能9</a><i>(123123)</i></li>
+				<li><a href="#">佳能10</a><i>(123123)</i></li>
+				<li><a href="#">佳能11</a><i>(123123)</i></li>
+				<li><a href="#">佳能12</a><i>(123123)</i></li>
+				<li><a href="#">佳能13</a><i>(123123)</i></li>
+				<li><a href="#">佳能14</a><i>(123123)</i></li>
+				<li><a href="#">显示最后一条</a><i>(123123)</i></li>
+			</ul>
+			<div class='showMore'>
+				<a  href="#"><span>显示全部品牌</span></a>
+			</div>
+		</div> -->
+<script src="index.js"></script>
 <script>
 		//两种文档加载完毕格式：
 		// $(document).ready(function(){
@@ -113,7 +193,25 @@
 		// 		alert('请阅读制度')
 		// 	}
 		// })
-
+		//全部显示和精简显示
+		// $(document).ready(function(){
+		// 	$HiddenItem =$('.SubCategoryBox  ul li:gt(5):not(:last)');
+		// 	$btn=$('div.showMore>a');
+		// 	$HiddenItem.hide();
+		// 	$btn.click(function(){
+		// 		if($HiddenItem.is(':visible')){
+		// 			$HiddenItem.hide();
+		// 			$(this).find('span').css('background-color','red').text('全部产品显示')
+		// 			$('ul li').filter(":contains('佳能1'),:contains('佳能2'),:contains('佳能3')").addClass('Highlight')
+		// 		}
+		// 		else{
+		// 			$HiddenItem.show();
+		// 				$(this).find('span').css('background-color','blue').text('精简产品显示');
+		// 				$('ul li').fitler(":contains('佳能1'),:contains('佳能2'),:contains('佳能3')").removeClass('Highlight')
+		// 		}
+		// 	})
+		// })
+		    
 </script>
 </body>
 </html>
