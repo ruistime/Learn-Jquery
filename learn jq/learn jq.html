@@ -1,0 +1,119 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>File upload</title>
+    <style>
+			*{padding: 0;margin: 0}
+			/* /单击list菜单
+				ul,li{list-style: none;}
+				a{text-decoration: none;}
+				.level2{display: none;width:300px;background-color: white}
+				.level1{
+					background-color:gray;width:300px;
+					transition:all 0.3s; 
+			}*/
+		
+    </style>
+</head>
+<body>
+<h1> Happy with Learn Jquery!!</h1>
+	<!-- //单击list菜单；
+   <div class='box'>
+		<ul class='menu'>
+			<li class="level1">
+				<a href="#none">衬衫</a>
+				<ul class="level2">
+					<li> <a href="#none">dasd</a></li>
+					<li> <a href="#none">dasd</a></li>
+					<li> <a href="#none">dasd</a></li>
+					<li> <a href="#none">dasd</a></li>
+				</ul>
+			</li>
+			<li class="level1">
+				<a href="#none">衬衫</a>
+				<ul class="level2">
+					<li> <a href="#none">dasd</a></li>
+					<li> <a href="#none">dasd</a></li>
+					<li> <a href="#none">dasd</a></li>
+					<li> <a href="#none">dasd</a></li>
+				</ul>
+			</li>
+			<li class="level1">
+				<a href="#none">衬衫</a>
+				<ul class="level2">
+					<li> <a href="#none">dasd</a></li>
+					<li> <a href="#none">dasd</a></li>
+					<li> <a href="#none">dasd</a></li>
+					<li> <a href="#none">dasd</a></li>
+				</ul>
+			</li>
+		</ul>
+
+   	</div> -->
+   	<!-- <div>
+   		<input type="checkbox" id="readed">
+   		<label for="readed">我已经阅读了上面制度</label>
+   		<input type="submit" id="InneedCheck" > 
+   	</div> -->
+   	<form id='formTest' action="#">
+   		可用元素：<input name="add" id="test"  value='可用文本框'>
+   		不可用元素：<input name="email" id="test"  value='不可用文本框' disabled="disabled">
+   		可用元素:<input name="che" id="test"  value='可用文本框'>
+   		不可用元素：<input name="name" id="test"  value='不可用文本框' disabled="disabled">
+   		<br/>
+   		多选框：<br/>
+   		<input type='checkbox' name="news" value ="xurui"  checked="checkde"/>许锐
+   		<input type='checkbox' name="news" value ="xurui"  checked="checkde"/>谢义群
+   		<input type='checkbox' name="news" value ="xurui" />许红军
+   		<input type='checkbox' name="news" value ="xurui" />吴洪群
+   		<input type='checkbox' name="news" value ="xurui" />吴黎明
+   		<input type='checkbox' name="news" value ="xurui" />陶军霖	
+   		<input type='checkbox' name="news" value ="xurui" />龙渝
+   		<br/>
+   		<div   style="vertical-align:middle">
+   		<select name="test" multiple ='multiple'  style='height:100px;display:inline'>
+			<option>浙江</option>
+			<option>北京</option>
+			<option selected='selected'>重庆</option>
+			<option>天津</option>
+			<option>上海</option>
+			<option>西安</option>
+			<option selected='selected'>湖南</option>
+   		</select>
+   		<select name="test2"  style="display:inline;vertical-align:middle" >
+			<option>浙江</option>
+			<option>北京</option>
+			<option  selected='selected'>重庆</option>
+			<option>天津</option>
+			<option>上海</option>
+			<option>西安</option>
+			<option >湖南</option>
+   		</select>
+   		<span style="display:inline;vertical-align:top"  >inline元素上下对其探索！！</span>
+   	</div>
+
+<script src="C:\Users\xurui\Desktop\index.js"></script>
+<script>
+		//两种文档加载完毕格式：
+		// $(document).ready(function(){
+		// 	console.log('documentReady!')
+		// })
+		// $(function(){console.log('another documentReady!')})
+
+		//单击list菜单；
+		// $('.level1>a').click(function(){
+		// 	$(this).addClass('current').next().show().parent().siblings().children('a').removeClass('current').next().hide();
+		// })
+		//注册阅读判断
+		// $('#InneedCheck').click(function(){
+		// 	var InCheck=$('#readed');
+		// 	if(InCheck.is(':checked')){
+		// 		alert('谢谢')
+		// 	}else{
+		// 		alert('请阅读制度')
+		// 	}
+		// })
+
+</script>
+</body>
+</html>
