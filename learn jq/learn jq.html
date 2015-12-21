@@ -172,6 +172,13 @@
 				<a  href="#"><span>显示全部品牌</span></a>
 			</div>
 		</div> -->
+		<!-- 某网站的超链接和图片提示效果 -->
+		<!-- <p><a  href="#" class="tooltip" title="这是第一个超链接提示">提示1.</a></p>
+		<p><a  href="#" class="tooltip" title="这是第二个超链接提示">提示2.</a></p>
+		<p><a  href="#"  title="这是自带提示1">提示1.</a></p>
+		<p><a  href="#"  title="这是自带提示2">提示2.</a></p> -->
+
+
 <script src="index.js"></script>
 <script>
 		//两种文档加载完毕格式：
@@ -211,7 +218,32 @@
 		// 		}
 		// 	})
 		// })
-		    
+		//克隆节点并插入文档
+		// $('h1').click(function(){
+		// 	$(this).clone(true).appendTo('body')
+		// })
+		// 超链接提示显示问题
+		// $(function(){
+		//   $('a.tooltip').mouseover(function(e){
+		//      this.mytitle =this.title;
+		//      this.title = '';
+		//        var $tip=$('<div id="tip">'+this.mytitle+'</div>');
+		//            $tip.appendTo('body');
+		//            var x=5;var y=5;
+		//            $('#tip').css({
+		//                     'top':e.pageY+y+'px',
+		//                     'left':e.pageX+x+'px' ,
+		//                     'position':'fixed'
+		//                   }).show()
+		// 	}).mouseout(function(){
+	 //            this.title =this.mytitle;
+	 //  			$('#tip').remove()
+		// 	})
+		// })
+		//  $('a.tooltip').mousemove(function(e){$('#tip').css({'top':e.pageY+5+'px',
+  //                   'left':e.pageX+5+'px' ,
+  //                   'position':'fixed'})
+		// })
 </script>
 </body>
 </html>
